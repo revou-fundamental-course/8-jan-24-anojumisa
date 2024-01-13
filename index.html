@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Katik</title>
+</head>
+<body>
+    <header><span class="header">Katik</span> Kalkulator Matematik</header>
+    
+    <div class="awal">
+        <h1>Welcome to Katik</h1>
+        <p>Hai Sobat, selamat datang di Katik :]</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.</p>
+    </div>
+    <div class="button-container">
+        <button class="selection-button">
+            <label for="square">Persegi</label>
+        </button>
+        <br>
+        <button class="selection-button">
+            <label for="rectangle">Persegi Panjang</label>
+        </button>
+    </div>
+    
+    <h2>Luas Persegi</h2>
+    <div class="squareImage">
+        <img src="images/persegi.jpg" alt="gambar persegi tidak dapat ditampilkan">
+    </div>     
+    <div class="formula">
+        <p>Rumus Luas Persegi yaitu:</p>
+        <p class="square-formula">L = S x S</p>
+        <p>Di mana:</p>
+        <p>L = Luas</p>
+        <p>S = Sisi</p>
+    </div>    
+        
+    
+
+    <div class="calculator">
+        <h2>Hitung Luas Persegi</h2>
+        <input type="number" id="squareSideValue" placeholder="Nilai Sisi" onfocus="clearPlaceholder()">
+        <button>Hitung</button>
+    </div>
+    <div class="container">
+        <div class="calculator">
+          </div>
+        <button class="reset-button">Reset</button>
+    </div>
+    
+
+
+</body>
+</html>
