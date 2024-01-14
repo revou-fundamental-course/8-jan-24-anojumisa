@@ -111,3 +111,19 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
   }
+  .container .reset-button:hover {
+    background-color: #870a0a;
+    font-weight: bold;
+    cursor:pointer;
+  }
+  .outer-box {
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 1px solid #cccccc;
+  }
+  .inner-box {
+    border: 2px solid black; 
+    padding: 15px; 
+    margin-bottom: 20px;
+  }
