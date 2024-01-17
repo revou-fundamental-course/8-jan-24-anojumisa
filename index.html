@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Katik</title>
+    <script src="js/script.js"></script>
 </head>
 <body>
     
@@ -38,39 +39,46 @@
                 </div>    
                 <div class="calculator">
                     <h2>Hitung Luas Persegi</h2>
-                    <input type="number" id="squareSideValue" placeholder="Nilai Sisi" onfocus="clearPlaceholder()">
-                    <button>Hitung</button>
+                    <input 
+                        type="number" 
+                        id="sisiPersegi" 
+                        placeholder="Masukkan Nilai Sisi">
+                    <button id="hitung">Hitung</button>
+                    <p id="squareAreaResult"></p>
+                    <p id="luas-sisixsisi-result"></p>
+                    <p id="luas-persegix-result"></p>
+                    <p id="luas-persegi-result"></p>
                 </div>
                 <div class="container">
                     <div class="calculator">
                     </div>
-                    <button class="reset-button">Reset</button>
+                    <button id="reset">Reset</button>
                 </div>
                 </div>
-            
-            <div class="inner-box">
-                <h2>Keliling Persegi</h2>
-                <div class="squareImage">
-                    <img src="images/persegi.jpg" alt="gambar persegi tidak dapat ditampilkan">
-                </div>     
-                <div class="formula">
-                    <p>Rumus Keliling Persegi yaitu:</p>
-                    <p class="square-formula">K = 4 x S</p>
-                    <p>Di mana:</p>
-                    <p>K = Keliling</p>
-                    <p>S = Sisi</p>
+                <div class="inner-box">
+                    <h2>Keliling Persegi</h2>
+                    <div class="squareImage">
+                        <img src="images/persegi.jpg" alt="gambar persegi tidak dapat ditampilkan">
+                    </div>     
+                    <div class="formula">
+                        <p>Rumus Keliling Persegi yaitu:</p>
+                        <p class="square-formula">K = 4 x S</p>
+                        <p>Di mana:</p>
+                        <p>K = Keliling</p>
+                        <p>S = Sisi</p>
+                    </div>    
+                    <div class="calculator">
+                        <h2>Hitung Keliling Persegi</h2>
+                        <input type="number" id="sisiKeliling" placeholder="Nilai Sisi">
+                        <button>Hitung</button>
+                    </div>
+                    <div class="container">
+                        <div class="calculator">
+                        </div>
+                        <button class="reset-button">Reset</button>
+                    </div>
                 </div>    
-                <div class="calculator">
-                    <h2>Hitung Keliling Persegi</h2>
-                    <input type="number" id="squareSideValue" placeholder="Nilai Sisi" onfocus="clearPlaceholder()">
-                    <button>Hitung</button>
-                </div>
-                <div class="container">
-                    <div class="calculator">
-                    </div>
-                    <button class="reset-button">Reset</button>
-                </div>
-            </div>
+            
     </div>
 </body>
 </html>
