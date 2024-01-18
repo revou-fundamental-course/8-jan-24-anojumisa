@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Katik</title>
     <script src="js/script.js"></script>
-</head>
-<body>
-    
+  </head>
+
+  <body>
+
     <div class="outer-box">
-        <header><span class="header">Katik</span> Kalkulator Matematik</header>
-            <div class="awal">
-                <h1>Welcome to Katik</h1>
+      <header><span class="header">Katik</span> Kalkulator Matematik</header>
+      <div class="awal">
+        <h1>Welcome to Katik</h1>
                 <p>Hai Sobat, selamat datang di Katik :]</p>
                 <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.</p>
             </div>
@@ -49,6 +51,7 @@
                     <p id="luas-persegix-result"></p>
                     <p id="luas-persegi-result"></p>
                 </div>
+                    
                 <div class="container">
                     <div class="calculator">
                     </div>
@@ -69,16 +72,23 @@
                     </div>    
                     <div class="calculator">
                         <h2>Hitung Keliling Persegi</h2>
-                        <input type="number" id="sisiKeliling" placeholder="Nilai Sisi">
-                        <button>Hitung</button>
+                            <input 
+                                type="number" 
+                                id="sisiKeliling" 
+                                placeholder="Nilai Sisi">
+                        <button id="hitungKeliling">Hitung</button>
+                            <p id="squarePerimeterResult"></p>
+                            <p id="keliling-sisixsisi-result"></p>
+                            <p id="keliling-persegix-result"></p>
+                            <p id="keliling-persegi-result"></p>
                     </div>
                     <div class="container">
                         <div class="calculator">
-                        </div>
-                        <button class="reset-button">Reset</button>
-                    </div>
-                </div>    
-            
+                        </div>   
+                    <button id="resetKeliling">Reset</button>
+      </div>
     </div>
-</body>
+    </div>
+  </body>
+
 </html>
