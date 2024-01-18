@@ -10,13 +10,14 @@ const persegix = document.getElementById("luas-persegix-result");
 const hitungKeliling = document.getElementById("hitungKeliling");
 const kelilingPersegiResult = document.getElementById("keliling-persegi-result");
 const empatxsisi = document.getElementById("keliling-persegix-result");
-const kelilingpersegi = document.getElementById("keliling-persegi-result");
+const kelilingpersegi = document.getElementById("keliling-sisixsisi-result");
 const resetKelilingButton = document.getElementById("resetKeliling");
 
 
-hitungLuas.addEventListener("click", () => {
+hitungLuas.addEventListener("click", function() {
    const sisi = sisiPersegi.value;
    const luas = sisi * sisi;
+   console.log(hitungLuas)
 
    luasPersegiResult.textContent = `Luas Persegi: ${luas}`;
    sisixsisi.textContent = `L = S X S`;
@@ -30,7 +31,7 @@ resetButton.addEventListener("click", function() {
    persegix.textContent = "";
 });
 
-hitungKeliling.addEventListener("click", () => {
+hitungKeliling.addEventListener("click", function() {
    const sisiK = sisiKeliling.value;
    const keliling = 4 * sisiK;
 
