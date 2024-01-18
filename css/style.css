@@ -101,7 +101,7 @@ h2 {
     justify-content: space-between;
     margin-right: 300px;
 }
-.reset-button {
+#reset {
     display: flex;
     margin-top: 8px;
     background-color: #f82100;
@@ -111,7 +111,7 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
   }
-  .container .reset-button:hover {
+  .container #reset:hover {
     background-color: #870a0a;
     font-weight: bold;
     cursor:pointer;
@@ -126,4 +126,19 @@ h2 {
     border: 2px solid black; 
     padding: 15px; 
     margin-bottom: 20px;
+  }
+  #resetKeliling {
+    display: flex;
+    margin-top: 8px;
+    background-color: #f82100;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .container #resetKeliling:hover {
+    background-color: #870a0a;
+    font-weight: bold;
+    cursor:pointer;
   }

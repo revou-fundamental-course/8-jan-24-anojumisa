@@ -16,9 +16,12 @@ const resetKelilingButton = document.getElementById("resetKeliling");
 
 hitungLuas.addEventListener("click", function() {
    const sisi = sisiPersegi.value;
+   // Validation
+   if (!/^\d+$/.test(sisi) || parseInt(sisi) <= 0) {
+      alert("Masukkan nilai sisi yang valid (harus angka positif).");
+      return;
+  }
    const luas = sisi * sisi;
-   console.log(hitungLuas)
-
    luasPersegiResult.textContent = `Luas Persegi: ${luas}`;
    sisixsisi.textContent = `L = S X S`;
    persegix.textContent = `L = ${sisi} X ${sisi}`;
@@ -33,6 +36,11 @@ resetButton.addEventListener("click", function() {
 
 hitungKeliling.addEventListener("click", function() {
    const sisiK = sisiKeliling.value;
+   // Validation
+   if (!/^\d+$/.test(sisiK) || parseInt(sisiK) <= 0) {
+      alert("Masukkan nilai sisi yang valid (harus angka positif).");
+      return;
+  }
    const keliling = 4 * sisiK;
 
    empatxsisi.textContent = `K = 4 X S`;
@@ -46,3 +54,14 @@ resetKelilingButton.addEventListener("click", function() {
    kelilingpersegi.textContent = "";
    kelilingPersegiResult.textContent = "";
 });
+
+function navigateToLuasPersegi() {
+  const luasPersegiSection = document.getElementById("luas-persegi");
+
+  if (luasPersegiSection) {
+    luasPersegiSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start"  
+    });
+  }
+}
